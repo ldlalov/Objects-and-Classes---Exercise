@@ -56,7 +56,7 @@ namespace _03._Articles_2._0
                     orderedArticles = articles.OrderBy(article => article.Author).ToList();
                     break;
             }
-            foreach (Article article in orderedArticles)
+            foreach (Article article in articles)  //Changed because changing the condition in Judge. Use orderedSrticles if they change it again. 
             {
                 Console.WriteLine($"{article}");
             }
